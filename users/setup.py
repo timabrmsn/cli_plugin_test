@@ -1,12 +1,12 @@
 from distutils.core import setup
 
 setup(
-    name="UsersPlugin",
+    name="code42cli_users",
     version="0.1",
-    packages=["c42plug_users"],
+    packages=["code42cli_users"],
     install_requires=["code42cli"],
     entry_points="""
         [code42cli.plugins]
-        get_device_user=c42plug_users.script:get_device_user
+        get_device_user=code42cli_users.script:get_device_user
     """,
 )
