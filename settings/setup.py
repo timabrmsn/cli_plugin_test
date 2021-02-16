@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name="code42cli_settings",
-    version="0.1",
+    version="0.2",
     packages=["code42cli_settings"],
     install_requires=["code42cli"],
     entry_points="""

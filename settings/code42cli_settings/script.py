@@ -9,6 +9,7 @@ from pprint import pprint
 def get_device_settings(state, guid):
     settings_response = state.sdk.devices.get_settings(guid)
     pprint(settings_response.data)
+    print("Thanks!")
 
 
 if __name__ == "__main__":
