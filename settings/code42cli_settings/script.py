@@ -4,12 +4,11 @@ from pprint import pprint
 
 
 @click.command()
-@click.option("--guid", required=True)
+@click.argument("guid")
 @sdk_options()
 def get_device_settings(state, guid):
-    settings_response = state.sdk.devices.get_settings(guid)
-    pprint(settings_response.data)
-    print("Thanks!")
+    settings = state.sdk.devices.get_settings(guid)
+    pprint(settings.data)
 
 
 if __name__ == "__main__":
