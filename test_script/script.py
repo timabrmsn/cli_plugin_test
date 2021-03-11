@@ -6,7 +6,7 @@ from py42.sdk.queries.fileevents.file_event_query import FileEventQuery
 from py42.sdk.queries.fileevents.filters import *
 
 
-@click.command()
+@click.command(help="List a user's devices and recent file events.")
 @click.argument("username")
 @sdk_options
 def my_command(state, username):
