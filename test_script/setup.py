@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name="script",
-    version="0.1",
+    version="0.2",
     py_modules=["script"],
     install_requires=["code42cli"],
     entry_points="""
